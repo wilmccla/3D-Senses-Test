@@ -19,7 +19,7 @@ public class GuardMover : MonoBehaviour
 
     void Update()
     {
-        if (!data.nav.pathPending && data.nav.remainingDistance < 0.5f)
+        if (!data.nav.pathPending && data.nav.remainingDistance < 0.5f) //Check if the Nav Agent has a path that's pending
         {
             MoveToNextWaypoint();
         }
